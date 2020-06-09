@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*?wordfence_lh=
+Disallow: /thankyoupage
+Disallow: /*.pdf
+Sitemap: http://restyling.ru/sitemap.xml
+Host: restyling.ru
