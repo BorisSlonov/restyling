@@ -1184,6 +1184,23 @@ html {
     bottom: auto
 }
 
+.services__text .services__nav-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #ed1c24;
+    border-bottom: 2px solid #ed1c24;
+}
+
+.services__text .services__nav-item:hover {
+    color: #b11b20;
+    border-bottom: 2px solid #b11b20;
+}
+
+.slick-slide {
+    outline: none;
+}
+
 .main__video-text {
     position: absolute;
     bottom: 0;
@@ -2798,7 +2815,11 @@ html {
     padding-left: 25px;
     padding-right: 15px;
 }
-
+@media(max-width:550px) {
+    .services__left {
+        padding-right: 0 !important;
+    }
+}
 .services__slider-container {
     flex-basis: 30px;
     padding-left: 15px;
@@ -3325,7 +3346,7 @@ html {
 
 
 .services__slider-item-new {
-    height: 235px;
+    height: 325px;
     min-width: 0;
     width: 100%;
     background-position: 50% 50%;
@@ -3337,8 +3358,9 @@ html {
     min-width: 0;
     width: 100%;
     margin: 0 5px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .slider-new-container .slick-arrow {
@@ -3349,6 +3371,12 @@ html {
     position: absolute;
     z-index: 100;
 
+}
+
+.class-descr {
+    font-size: .95rem;
+    line-height: 1.4;
+    margin-top: 1.5em;
 }
 
 .slider-new-container .slick-prev {
@@ -3403,6 +3431,36 @@ html {
 /* //new-slider */
 
 
+.text-plenka-flex {
+    display: flex;
+
+}
+
+.text-plenka-flex p:first-child {
+    flex-basis: 60%;
+}
+
+.text-plenka-flex p:last-child {
+    flex-basis: 50%;
+    margin-left: 1em;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    box-shadow: 0 0 4px 2px #ed1c2311;
+    padding: 5px;
+    border-top: 2px solid #ed1c24;
+}
+
+@media(max-width:1024px) {
+    .text-plenka-flex {
+        flex-direction: column;
+    }
+
+    .text-plenka-flex p:last-child {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+}
+
 /* table */
 .service-table {
     display: flex;
@@ -3411,24 +3469,28 @@ html {
     width: 100%;
     text-align: center;
     margin-top: 1.5em;
+    font-size: 1.1rem;
+}
+
+.service-table-column {
+    flex-direction: column;
 }
 
 .service-table__row {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 18px 0;
 }
 
 .service-table__row:not(:last-child) {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.788);
 
 }
 
 .service-table__name {
     flex-basis: 35%;
     font-weight: 700;
-
     text-align: left;
 }
 
@@ -3457,9 +3519,11 @@ html {
 }
 
 .service-table-container .service-table {
-    width: 100%;
-    flex-basis: 65%;
+    max-width: 400px;
+    flex-basis: 100%;
     margin-top: 0;
+
+    margin-right: auto;
 }
 
 .service-table-container .service-table:first-child {
@@ -3535,6 +3599,7 @@ html {
     .service-table-container {
         flex-direction: column-reverse;
     }
+
     .service-table-container .service-table {
         margin-top: 1.25em;
     }
@@ -3552,8 +3617,9 @@ html {
         width: 100%;
         flex-basis: 100%;
         text-align: right;
-       
+
     }
+
     .service-table-container .service-table__row {
         justify-content: space-around;
     }
@@ -5902,4 +5968,74 @@ div.seo-text ul li {
     display: list-item;
     text-align: -webkit-match-parent;
     list-style-type: circle;
+}
+
+
+/* widget */
+
+.widget {
+    width: 100%;
+}
+
+.js-car img {
+    width: 100%;
+    border-bottom: 4px solid #b11b20;
+}
+
+.widget__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding-top: .5em;
+}
+
+.widget__menu .item {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    padding: .5em .5em;
+
+}
+
+.widget__menu .item:hover {
+    cursor: pointer;
+}
+
+
+
+.widget__menu .item.active-w {
+    border-bottom: 2px solid #b11b20;
+    background-color: rgba(0, 0, 0);
+}
+
+.js-car ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+    justify-content: space-around;
+    margin-top: -5px;
+    padding: 0.5em 0;
+}
+.js-car ul li {
+    margin: 0.25em .35em;
+}
+
+@media(max-width:500px) {
+    .js-car ul {
+        justify-content: center;
+    }
+}
+
+@media(min-width:1202px) {
+    .widget {
+        margin-left: -25px;
+    }
 }
