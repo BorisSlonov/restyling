@@ -30,6 +30,29 @@ $(document).ready(function () {
 		}
 	});
 
+
+
+
+	$('.js-car').not(':first').hide();
+
+	$('.js-wrap .item').hover(function () {
+		$('.js-wrap .item').removeClass('active-w');
+		$(this).addClass('active-w');
+		$('.js-car').hide();
+		$('.car-' + $(this).data('index')).show();
+	});
+
+
+	var mh = 0;
+	$(".item").each(function () {
+		var h_block = parseInt($(this).height());
+		if(h_block > mh) {
+		   mh = h_block;
+		};
+	});
+	$(".item").height(mh);
+
+	
 	// COMMON START
 	$('a[href^="#"], a[href^="."]').click(function () {
 		var scroll_el = $(this).attr('href');
@@ -282,6 +305,8 @@ $(document).ready(function () {
 		focusOnSelect: true
 	});
 
+	$('.services__slider-new').slick('setPosition');
+
 	// SERVICES END
 
 	//TEAM START
@@ -521,4 +546,11 @@ $(document).ready(function () {
 
 		myMap.geoObjects.add(myPlacemark);
 	}
+
+
+
+
+
+
+
 });
