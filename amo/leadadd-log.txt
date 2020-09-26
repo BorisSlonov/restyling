@@ -1,0 +1,22 @@
+Array
+(
+    [phone] => 79211443645
+    [cid] => 666230088.1597141638
+    [calc] => 
+Какой у вас автомобиль: Не задано
+Какие элементы авто нуждаются в уходе: Ничего не выбрано
+Какие услуги по вашим ожиданиям вам потребуются: Ничего не выбраноВыберите свой подарок: Ничего не выбрано
+    [page] =>  / 
+    [uniq] => да
+    [status] => 
+    [token_alloka] => ?guest_token=1-4YW9Vmi-h8_OQsUB0djg
+    [draftResponse] => 3786458749508568368
+    [url_google] => https://docs.google.com/forms/d/e/1FAIpQLSe8LwrpAOKahBFunlllM1o3H0nVEu8CqRy0IIwo-wfgXOwrWQ/formResponse
+    [UA] => UA-132281306-1
+    [url_crm] => https://restyling.ru/amo/leadadd.php
+    [tags] => Zolle,restyling.ru
+    [utm_source] => 
+    [utm_campaign] => 
+    [utm_content] => undefined
+    [utm_term] => undefined
+)

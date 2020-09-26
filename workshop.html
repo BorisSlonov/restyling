@@ -45,10 +45,11 @@
             </div>
             <nav class="header_common__menu" style="display: none;">
                 <div class="header_common__item "><a href="/services.html">услуги</a></div>
+                <div class="header__item"><a class="color-red" href="/academy.html">обучение</a></div>
                 <div class="header_common__item "><a href="/approach.html">подход</a></div>
-                <div class="header_common__item "><a href="/team.html">команда</a></div>
+                <div class="header_common__item "><a href="/reviews.html">отзывы</a></div>
                 <div class="header_common__item header_common__item_current"><a href="/workshop.html">студия</a></div>
-                <div class="header_common__item "><a href="/clients.html">клиенты</a></div>
+                <div class="header_common__item "><a href="/cases.html">кейсы</a></div>
                 <div class="header_common__item "><a href="/kontakty.html">контакты</a></div>
                 <div class="header_common__btn" data-popup-show="quiz">Рассчитать стоимость работ</div>
             </nav>
@@ -182,7 +183,7 @@
                 работаем только с тремя авто одновременно
             </div>
 
-            <form action="/" method="POST" class="footer-form__form send_form">
+            <form action="/" method="POST" class="footer-form__form send_form zapis-form">
                 <input type="hidden" name="ltype" value="Забронировать место в мастерской">
                 <div class="footer-form__row">
                     <div class="footer-form__input">
@@ -209,7 +210,7 @@
     <div class="map screen">
         <div class="container">
             <div class="map__title">Ждем вас по адресу</div>
-            <div class="map__text">Полевая Сабировская, 37<br>Ежедневно: 10:00-21:00</div>
+            <div class="map__text">Выборгское шоссе 35 корпус 1<br>Ежедневно: 10:00-21:00</div>
             <div class="map__block">
                 <div class="map__foto"></div>
                 <div id="map__map" class="map__map"></div>
@@ -294,7 +295,7 @@
                         - мойка двигателя<br>
                         - полировка фар<br>
                     </div>
-                    <form action="/" method="POST" class="popup__form send_form">
+                    <form action="/" method="POST" class="popup__form send_form zapis-form">
                         <div class="popup__input-text">Ваш номер телефона</div>
                         <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
                         <button class="popup__btn">ЗАПИСАТЬСЯ</button>
@@ -326,7 +327,7 @@
                         Ответим на все вопросы <br>
                         и расскажем о скидках и акциях
                     </div>
-                    <form action="/" method="POST" class="popup__form send_form">
+                    <form action="/" method="POST" class="popup__form send_form callback-form">
                         <div class="popup__input-text">Ваш номер телефона</div>
                         <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
                         <button class="popup__btn">ПОЗВОНИТЬ МНЕ</button>
@@ -380,7 +381,7 @@
                     </div>
                 </div>
                 <div class="popup__right">
-                    <form action="/" method="POST" class="popup__form send_form">
+                    <form action="/" method="POST" class="popup__form send_form cost-form">
                         <div class="popup__input-text">Ваш номер телефона</div>
                         <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
                         <button class="popup__btn">УЗНАТЬ СТОИМОСТЬ</button>
@@ -433,7 +434,7 @@
     <div class="popup__wrapblock">
         <div class="popup__block">
             <div class="popup__close"></div>
-            <form class="popup__cont send_form" method="POST" action="/">
+            <form class="popup__cont send_form cost-form" method="POST" action="/">
                 <input type="hidden" name="ltype" value="Рассчитать стоимость работ">
                 <div class="popup__top">
                     <div class="popup__left" data-stage="1">

@@ -1,0 +1,832 @@
+Data: array (
+  'id' => '23682976',
+  'name' => 'restylingspb',
+  'subdomain' => 'restylingspb',
+  'currency' => 'RUB',
+  'timezone' => 'Europe/Moscow',
+  'language' => 'ru',
+  'notifications_base_url' => 'https://notifications.amocrm.ru',
+  'notifications_ws_url' => 'wss://notifications.amocrm.ru',
+  'notifications_ws_url_v2' => 'wss://ws.amocrm.ru/restylingspb/v2/rtm?stand=v4',
+  'amojo_base_url' => 'https://amojo.amocrm.ru',
+  'amojo_rights' => 
+  array (
+    'can_direct' => true,
+    'can_group_create' => true,
+  ),
+  'current_user' => 3039811,
+  'version' => 5,
+  'date_pattern' => 'd.m.Y H:i',
+  'short_date_pattern' => 
+  array (
+    'date' => 'd.m.Y',
+    'time' => 'H:i',
+    'date_time' => 'd.m.Y H:i',
+  ),
+  'date_format' => 'd.m.Y',
+  'time_format' => 'H:i:s',
+  'country' => 'ru',
+  'unsorted_on' => 'Y',
+  'mobile_feature_version' => 0,
+  'customers_enabled' => NULL,
+  'periodicity_enabled' => NULL,
+  'loss_reasons_enabled' => true,
+  'limits' => 
+  array (
+    'users_count' => false,
+    'contacts_count' => false,
+    'active_deals_count' => false,
+  ),
+  'users' => 
+  array (
+    0 => 
+    array (
+      'id' => '3039811',
+      'mail_admin' => 'A',
+      'name' => 'Алексей',
+      'last_name' => NULL,
+      'login' => 'amorestyling@mail.ru',
+      'photo_url' => NULL,
+      'phone_number' => NULL,
+      'language' => 'ru',
+      'active' => true,
+      'is_admin' => 'Y',
+      'unsorted_access' => 'Y',
+      'catalogs_access' => 'Y',
+      'group_id' => 0,
+      'rights_lead_add' => 'A',
+      'rights_lead_view' => 'A',
+      'rights_lead_edit' => 'A',
+      'rights_lead_delete' => 'A',
+      'rights_lead_export' => 'A',
+      'rights_contact_add' => 'A',
+      'rights_contact_view' => 'A',
+      'rights_contact_edit' => 'A',
+      'rights_contact_delete' => 'A',
+      'rights_contact_export' => 'A',
+      'rights_company_add' => 'A',
+      'rights_company_view' => 'A',
+      'rights_company_edit' => 'A',
+      'rights_company_delete' => 'A',
+      'rights_company_export' => 'A',
+      'rights_task_edit' => 'A',
+      'rights_task_delete' => 'A',
+      'free_user' => false,
+    ),
+    1 => 
+    array (
+      'id' => '2978947',
+      'mail_admin' => 'A',
+      'name' => 'Бурмистров Алексей',
+      'last_name' => '',
+      'login' => 'a.n.burmistrov.hse.spb@mail.ru',
+      'photo_url' => NULL,
+      'phone_number' => NULL,
+      'language' => NULL,
+      'active' => true,
+      'is_admin' => NULL,
+      'unsorted_access' => 'Y',
+      'catalogs_access' => 'Y',
+      'group_id' => 0,
+      'rights_lead_add' => 'A',
+      'rights_lead_view' => 'G',
+      'rights_lead_edit' => 'G',
+      'rights_lead_delete' => 'D',
+      'rights_lead_export' => 'D',
+      'rights_contact_add' => 'A',
+      'rights_contact_view' => 'G',
+      'rights_contact_edit' => 'G',
+      'rights_contact_delete' => 'D',
+      'rights_contact_export' => 'D',
+      'rights_company_add' => 'A',
+      'rights_company_view' => 'G',
+      'rights_company_edit' => 'G',
+      'rights_company_delete' => 'D',
+      'rights_company_export' => 'D',
+      'rights_task_edit' => 'G',
+      'rights_task_delete' => 'D',
+      'free_user' => false,
+    ),
+    2 => 
+    array (
+      'id' => '2978944',
+      'mail_admin' => 'A',
+      'name' => 'Морев Алексей',
+      'last_name' => '',
+      'login' => 'alexmorev94@yandex.ru',
+      'photo_url' => NULL,
+      'phone_number' => NULL,
+      'language' => NULL,
+      'active' => true,
+      'is_admin' => NULL,
+      'unsorted_access' => 'Y',
+      'catalogs_access' => 'Y',
+      'group_id' => 0,
+      'rights_lead_add' => 'A',
+      'rights_lead_view' => 'G',
+      'rights_lead_edit' => 'G',
+      'rights_lead_delete' => 'D',
+      'rights_lead_export' => 'D',
+      'rights_contact_add' => 'A',
+      'rights_contact_view' => 'G',
+      'rights_contact_edit' => 'G',
+      'rights_contact_delete' => 'D',
+      'rights_contact_export' => 'D',
+      'rights_company_add' => 'A',
+      'rights_company_view' => 'G',
+      'rights_company_edit' => 'G',
+      'rights_company_delete' => 'D',
+      'rights_company_export' => 'D',
+      'rights_task_edit' => 'M',
+      'rights_task_delete' => 'D',
+      'free_user' => false,
+    ),
+  ),
+  'groups' => 
+  array (
+    0 => 
+    array (
+      'id' => 0,
+      'name' => 'Отдел продаж',
+    ),
+  ),
+  'leads_statuses' => 
+  array (
+    0 => 
+    array (
+      'id' => 23682982,
+      'name' => 'Первичный контакт',
+      'pipeline_id' => 1547074,
+      'sort' => 10,
+      'color' => '#99ccff',
+      'editable' => 'Y',
+    ),
+    1 => 
+    array (
+      'id' => 23682985,
+      'name' => 'КВ-Я ПРОЙДЕНА, ВСТРЕЧА НАЗНАЧЕНА',
+      'pipeline_id' => 1547074,
+      'sort' => 20,
+      'color' => '#ffce5a',
+      'editable' => 'Y',
+    ),
+    2 => 
+    array (
+      'id' => 23682988,
+      'name' => 'КВ-Я ПРОЙДЕНА, ВСТРЕЧА НЕ НАЗНАЧЕНА',
+      'pipeline_id' => 1547074,
+      'sort' => 30,
+      'color' => '#98cbff',
+      'editable' => 'Y',
+    ),
+    3 => 
+    array (
+      'id' => 23682991,
+      'name' => 'СОСТОЯЛСЯ ВИЗИТ, АВТО НЕ ЗАПИСАНО',
+      'pipeline_id' => 1547074,
+      'sort' => 40,
+      'color' => '#fffd7f',
+      'editable' => 'Y',
+    ),
+    4 => 
+    array (
+      'id' => 23697931,
+      'name' => 'СОСТОЯЛСЯ ВИЗИТ, АВТО ЗАПИСАНО',
+      'pipeline_id' => 1547074,
+      'sort' => 50,
+      'color' => '#98cbff',
+      'editable' => 'Y',
+    ),
+    5 => 
+    array (
+      'id' => 23697934,
+      'name' => 'ПРИНЯТО В РАБОТУ',
+      'pipeline_id' => 1547074,
+      'sort' => 60,
+      'color' => '#ffc8c8',
+      'editable' => 'Y',
+    ),
+    6 => 
+    array (
+      'id' => 142,
+      'name' => 'МАШИНА ВЫДАНА, ОПЛАТА ПОЛУЧЕНА',
+      'pipeline_id' => 1547074,
+      'sort' => 10000,
+      'color' => '#CCFF66',
+      'editable' => 'N',
+    ),
+    7 => 
+    array (
+      'id' => 143,
+      'name' => 'Закрыто и не реализовано',
+      'pipeline_id' => 1547074,
+      'sort' => 11000,
+      'color' => '#D5D8DB',
+      'editable' => 'N',
+    ),
+  ),
+  'custom_fields' => 
+  array (
+    'contacts' => 
+    array (
+      0 => 
+      array (
+        'id' => '134417',
+        'name' => 'Должность',
+        'code' => 'POSITION',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '0',
+        'sort' => 2,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      1 => 
+      array (
+        'id' => '134419',
+        'name' => 'Телефон',
+        'code' => 'PHONE',
+        'multiple' => 'Y',
+        'type_id' => '8',
+        'disabled' => '0',
+        'sort' => 4,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          206717 => 'WORK',
+          206719 => 'WORKDD',
+          206721 => 'MOB',
+          206723 => 'FAX',
+          206725 => 'HOME',
+          206727 => 'OTHER',
+        ),
+      ),
+      2 => 
+      array (
+        'id' => '134421',
+        'name' => 'Email',
+        'code' => 'EMAIL',
+        'multiple' => 'Y',
+        'type_id' => '8',
+        'disabled' => '0',
+        'sort' => 6,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          206729 => 'WORK',
+          206731 => 'PRIV',
+          206733 => 'OTHER',
+        ),
+      ),
+      3 => 
+      array (
+        'id' => '140539',
+        'name' => 'CF_NAME_USER_AGREEMENT',
+        'code' => 'USER_AGREEMENT',
+        'multiple' => 'N',
+        'type_id' => '3',
+        'disabled' => '1',
+        'sort' => 10002,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+    ),
+    'leads' => 
+    array (
+      0 => 
+      array (
+        'id' => '140543',
+        'name' => 'Источник трафика',
+        'code' => 'UTM_SOURCE',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '1',
+        'sort' => 8,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      1 => 
+      array (
+        'id' => '140545',
+        'name' => 'Тип трафика',
+        'code' => 'UTM_MEDIUM',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '1',
+        'sort' => 9,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      2 => 
+      array (
+        'id' => '140547',
+        'name' => 'Название рекламной кампании',
+        'code' => 'UTM_CAMPAIGN',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '1',
+        'sort' => 10,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      3 => 
+      array (
+        'id' => '140549',
+        'name' => 'Ключевое слово кампании',
+        'code' => 'UTM_TERM',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '1',
+        'sort' => 12,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      4 => 
+      array (
+        'id' => '140551',
+        'name' => 'GA UTM',
+        'code' => 'GA_UTM',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '1',
+        'sort' => 13,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      5 => 
+      array (
+        'id' => '140661',
+        'name' => 'Тип сделки',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '10',
+        'disabled' => '0',
+        'sort' => 501,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          216511 => 'Первичная',
+          216513 => 'Вторичная',
+        ),
+      ),
+      6 => 
+      array (
+        'id' => '140663',
+        'name' => 'Авто',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '1',
+        'disabled' => '0',
+        'sort' => 502,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      7 => 
+      array (
+        'id' => '140669',
+        'name' => 'Что хочет',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '5',
+        'disabled' => '0',
+        'sort' => 503,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          216525 => 'полировка',
+          216527 => 'керамика',
+          216529 => 'химчистка',
+          216531 => 'пленка',
+          216533 => 'тонировка',
+          216535 => 'антидождь',
+          216537 => 'антихром',
+          216539 => 'комплекс',
+          216541 => 'другое',
+        ),
+      ),
+      8 => 
+      array (
+        'id' => '140671',
+        'name' => 'Дата визита',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '6',
+        'disabled' => '0',
+        'sort' => 504,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      9 => 
+      array (
+        'id' => '140689',
+        'name' => 'От куда узнали',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '4',
+        'disabled' => '0',
+        'sort' => 505,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          216579 => 'VK',
+          216581 => 'FB',
+          216583 => 'IG',
+          216585 => 'Рекомендация',
+          216587 => 'Yandex',
+          216589 => 'Google',
+        ),
+      ),
+      10 => 
+      array (
+        'id' => '140691',
+        'name' => 'Дата записи',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '6',
+        'disabled' => '0',
+        'sort' => 506,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      11 => 
+      array (
+        'id' => '140693',
+        'name' => 'Дата выдачи авто',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '6',
+        'disabled' => '0',
+        'sort' => 507,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      12 => 
+      array (
+        'id' => '140763',
+        'name' => 'Причина отказа',
+        'code' => '',
+        'multiple' => 'N',
+        'type_id' => '4',
+        'disabled' => '0',
+        'sort' => 514,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          216591 => 'Дорого',
+          216593 => 'Не выходит на связь',
+          216595 => 'Выбрал конкурентов',
+          216597 => 'Не можем ничего предложить',
+          216599 => 'Битый номер',
+          216601 => 'Другое (в примечании)',
+        ),
+      ),
+    ),
+    'companies' => 
+    array (
+      0 => 
+      array (
+        'id' => '134419',
+        'name' => 'Телефон',
+        'code' => 'PHONE',
+        'multiple' => 'Y',
+        'type_id' => '8',
+        'disabled' => '0',
+        'sort' => 4,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          206717 => 'WORK',
+          206719 => 'WORKDD',
+          206721 => 'MOB',
+          206723 => 'FAX',
+          206725 => 'HOME',
+          206727 => 'OTHER',
+        ),
+      ),
+      1 => 
+      array (
+        'id' => '134421',
+        'name' => 'Email',
+        'code' => 'EMAIL',
+        'multiple' => 'Y',
+        'type_id' => '8',
+        'disabled' => '0',
+        'sort' => 6,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+        'enums' => 
+        array (
+          206729 => 'WORK',
+          206731 => 'PRIV',
+          206733 => 'OTHER',
+        ),
+      ),
+      2 => 
+      array (
+        'id' => '134423',
+        'name' => 'Web',
+        'code' => 'WEB',
+        'multiple' => 'N',
+        'type_id' => '7',
+        'disabled' => '0',
+        'sort' => 8,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+      3 => 
+      array (
+        'id' => '134425',
+        'name' => 'Адрес',
+        'code' => 'ADDRESS',
+        'multiple' => 'N',
+        'type_id' => '9',
+        'disabled' => '0',
+        'sort' => 10,
+        'is_required' => false,
+        'is_deletable' => true,
+        'is_visible' => true,
+      ),
+    ),
+    'customers' => 
+    array (
+    ),
+  ),
+  'note_types' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => '',
+      'code' => 'DEAL_CREATED',
+      'editable' => 'N',
+    ),
+    1 => 
+    array (
+      'id' => 2,
+      'name' => '',
+      'code' => 'CONTACT_CREATED',
+      'editable' => 'N',
+    ),
+    2 => 
+    array (
+      'id' => 3,
+      'name' => '',
+      'code' => 'DEAL_STATUS_CHANGED',
+      'editable' => 'N',
+    ),
+    3 => 
+    array (
+      'id' => 4,
+      'name' => '',
+      'code' => 'COMMON',
+      'editable' => 'Y',
+    ),
+    4 => 
+    array (
+      'id' => 5,
+      'name' => '',
+      'code' => 'ATTACHEMENT',
+      'editable' => 'N',
+    ),
+    5 => 
+    array (
+      'id' => 6,
+      'name' => '',
+      'code' => 'CALL',
+      'editable' => 'N',
+    ),
+    6 => 
+    array (
+      'id' => 7,
+      'name' => '',
+      'code' => 'MAIL_MESSAGE',
+      'editable' => 'N',
+    ),
+    7 => 
+    array (
+      'id' => 8,
+      'name' => '',
+      'code' => 'MAIL_MESSAGE_ATTACHMENT',
+      'editable' => 'N',
+    ),
+    8 => 
+    array (
+      'id' => 9,
+      'name' => '',
+      'code' => 'EXTERNAL_ATTACH',
+      'editable' => 'N',
+    ),
+    9 => 
+    array (
+      'id' => 10,
+      'name' => '',
+      'code' => 'CALL_IN',
+      'editable' => 'N',
+    ),
+    10 => 
+    array (
+      'id' => 11,
+      'name' => '',
+      'code' => 'CALL_OUT',
+      'editable' => 'N',
+    ),
+    11 => 
+    array (
+      'id' => 12,
+      'name' => '',
+      'code' => 'COMPANY_CREATED',
+      'editable' => 'N',
+    ),
+    12 => 
+    array (
+      'id' => 13,
+      'name' => '',
+      'code' => 'TASK_RESULT',
+      'editable' => 'N',
+    ),
+    13 => 
+    array (
+      'id' => 17,
+      'name' => '',
+      'code' => 'CHAT',
+      'editable' => 'N',
+    ),
+    14 => 
+    array (
+      'id' => 99,
+      'name' => '',
+      'code' => 'MAX_SYSTEM',
+      'editable' => 'N',
+    ),
+    15 => 
+    array (
+      'id' => 101,
+      'name' => 'Ссылка',
+      'code' => 'DROPBOX',
+      'editable' => 'N',
+    ),
+    16 => 
+    array (
+      'id' => 102,
+      'name' => 'Входящее',
+      'code' => 'SMS_IN',
+      'editable' => 'N',
+    ),
+    17 => 
+    array (
+      'id' => 103,
+      'name' => 'Исходящее',
+      'code' => 'SMS_OUT',
+      'editable' => 'N',
+    ),
+  ),
+  'task_types' => 
+  array (
+    0 => 
+    array (
+      'id' => 1,
+      'name' => 'Связаться с клиентом',
+      'code' => 'FOLLOW_UP',
+    ),
+    1 => 
+    array (
+      'id' => 1,
+      'name' => 'Звонок',
+      'code' => 'CALL',
+    ),
+    2 => 
+    array (
+      'id' => 2,
+      'name' => 'Встреча',
+      'code' => 'MEETING',
+    ),
+    3 => 
+    array (
+      'id' => 3,
+      'name' => 'Письмо',
+      'code' => 'LETTER',
+    ),
+  ),
+  'pipelines' => 
+  array (
+    1547074 => 
+    array (
+      'id' => 1547074,
+      'value' => 1547074,
+      'label' => 'Воронка',
+      'name' => 'Воронка',
+      'sort' => 1,
+      'is_main' => true,
+      'statuses' => 
+      array (
+        23682982 => 
+        array (
+          'id' => 23682982,
+          'name' => 'Первичный контакт',
+          'pipeline_id' => 1547074,
+          'sort' => 10,
+          'color' => '#99ccff',
+          'editable' => 'Y',
+          'type' => 0,
+        ),
+        23682985 => 
+        array (
+          'id' => 23682985,
+          'name' => 'КВ-Я ПРОЙДЕНА, ВСТРЕЧА НАЗНАЧЕНА',
+          'pipeline_id' => 1547074,
+          'sort' => 20,
+          'color' => '#ffce5a',
+          'editable' => 'Y',
+          'type' => 0,
+        ),
+        23682988 => 
+        array (
+          'id' => 23682988,
+          'name' => 'КВ-Я ПРОЙДЕНА, ВСТРЕЧА НЕ НАЗНАЧЕНА',
+          'pipeline_id' => 1547074,
+          'sort' => 30,
+          'color' => '#98cbff',
+          'editable' => 'Y',
+          'type' => 0,
+        ),
+        23682991 => 
+        array (
+          'id' => 23682991,
+          'name' => 'СОСТОЯЛСЯ ВИЗИТ, АВТО НЕ ЗАПИСАНО',
+          'pipeline_id' => 1547074,
+          'sort' => 40,
+          'color' => '#fffd7f',
+          'editable' => 'Y',
+          'type' => 0,
+        ),
+        23697931 => 
+        array (
+          'id' => 23697931,
+          'name' => 'СОСТОЯЛСЯ ВИЗИТ, АВТО ЗАПИСАНО',
+          'pipeline_id' => 1547074,
+          'sort' => 50,
+          'color' => '#98cbff',
+          'editable' => 'Y',
+          'type' => 0,
+        ),
+        23697934 => 
+        array (
+          'id' => 23697934,
+          'name' => 'ПРИНЯТО В РАБОТУ',
+          'pipeline_id' => 1547074,
+          'sort' => 60,
+          'color' => '#ffc8c8',
+          'editable' => 'Y',
+          'type' => 0,
+        ),
+        142 => 
+        array (
+          'id' => 142,
+          'name' => 'МАШИНА ВЫДАНА, ОПЛАТА ПОЛУЧЕНА',
+          'color' => '#CCFF66',
+          'sort' => 10000,
+          'editable' => 'N',
+          'pipeline_id' => 1547074,
+        ),
+        143 => 
+        array (
+          'id' => 143,
+          'name' => 'Закрыто и не реализовано',
+          'color' => '#D5D8DB',
+          'sort' => 11000,
+          'editable' => 'N',
+          'pipeline_id' => 1547074,
+        ),
+      ),
+      'leads' => 1,
+    ),
+  ),
+  'timezoneoffset' => '+03:00',
+)
