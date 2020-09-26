@@ -7175,6 +7175,8 @@ div.seo-text ul li {
 }
 .class_descr {
     position: absolute;
+    height: 100%;
+    min-height: 100px;
     width: 100%;
     background-color: #ccc;
     border-radius: 5px;
@@ -7186,12 +7188,21 @@ div.seo-text ul li {
     transition: all .25s;
     transform: translateY(-100%);
 }
+.span_w_class_name {
+    font-weight: 600;
+}
+
+.w-active .span_w_class_name {
+    color: #ed1c24;
+
+}
 .wash_table__class_name:hover {
     background-color: #ccc;
     transition: all .25s;
 }
 .wash_table__class_name:hover .class_descr {
     opacity: 1;
+    top: 110%;
     transform: translateY(0);
     visibility: visible;
 }
@@ -7245,15 +7256,28 @@ div.seo-text ul li {
     font-weight: 600;
 }
 
-
+.icon-info {
+    margin-left: 0.5rem;
+}
 
 .w-active {
     background-color: rgba(204, 204, 204, 0.267);
 }
-
+.tab {
+    display: none;
+}
 @media(max-width:768px) {
+    .icon-info,
     .wash_table__col {
         display: none;
+    }
+
+    .tab {
+        display: block;
+    }
+
+    .tab .icon-info  {
+        display: inline-block;
     }
 
     .wash_table__product-name {
@@ -7288,6 +7312,9 @@ div.seo-text ul li {
 }
 
 .class_popup_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 0;
     text-align: center;
     width: 100%;
@@ -7314,6 +7341,6 @@ div.seo-text ul li {
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 8px 1px rgba(204, 204, 204, 0.429);
     border-top: none;
   }
