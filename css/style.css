@@ -7098,6 +7098,7 @@ div.seo-text ul li {
 
 
 
+/* car-wash */
 
 
 
@@ -7154,8 +7155,19 @@ div.seo-text ul li {
 }
 
 
+.wash_services_h2 {
+    font-size: 2.4rem;
+    border-left: 3px solid #ed1c24;
+    padding-left: 10px;
+    margin: 2rem 0 1rem;
+}
 
-
+.descr_class_name:not(:first-child) {
+    margin-top: 1rem;
+    border-bottom: 1px solid #ed1c24;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
 /* wash_table */
 .wash_table {
     margin-top: 3rem;
