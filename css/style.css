@@ -7154,6 +7154,23 @@ div.seo-text ul li {
     }
 }
 
+@media(max-width:420px) {
+    .car-wash-btn-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .car-wash-btn-container__link  {
+        width: 100%;
+        text-align: center;
+    }
+
+    .car-wash-btn-container__link:last-child {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
 
 .wash_services_h2 {
     font-size: 2.4rem;
