@@ -7271,7 +7271,7 @@ div.seo-text ul li {
     font-size: 1.4rem;
     text-transform: uppercase;
     border-bottom: 1px solid #ed1c24;
-    padding-bottom: 0.25rem;
+    padding: 0.25rem 0;
 }
 .w_product_name__text {
     margin-top: 0.25rem;
@@ -7378,8 +7378,9 @@ div.seo-text ul li {
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    box-shadow: 0 0 8px 1px rgba(204, 204, 204, 0.429);
+    box-shadow: 0 0 4px 1px rgba(204, 204, 204, 0.329);
     border-top: none;
+    padding-bottom: 10px;
   }
 
 
