@@ -7205,6 +7205,12 @@ div.seo-text ul li {
     text-align: center;
     background-color: #e2e2e2;
 }
+
+@media(max-width:550px) {
+    .wash_table__head {
+        top: 90px;
+    }
+}
 .class_descr {
     position: absolute;
     height: 100%;
