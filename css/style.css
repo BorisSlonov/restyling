@@ -7181,6 +7181,9 @@ div.seo-text ul li {
 
 .descr_class_name:not(:first-child) {
     margin-top: 1rem;
+
+}
+.descr_class_name {
     border-bottom: 1px solid #ed1c24;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -7320,9 +7323,8 @@ div.seo-text ul li {
     } 
 
     .wash_table__head .wash_table__col {
-        display: block;
-        width: 100%;
-        flex-basis: 100%;
+        display: flex;
+        flex-basis: 25%;
     }
 
     .wash_table__head .wash_table__product-name {
@@ -7374,6 +7376,12 @@ div.seo-text ul li {
     border-top: none;
   }
 
+
+  @media(max-width:425px) {
+      .wash_services_h2 {
+          font-size: 1.5rem;
+      }
+  }
 
 
 
