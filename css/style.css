@@ -7218,7 +7218,7 @@ div.seo-text ul li {
     opacity: 0;
     visibility: hidden;
     transition: all .25s;
-    transform: translateY(-100%);
+    transform: translateY(100%);
 }
 .span_w_class_name {
     font-weight: 600;
@@ -7234,7 +7234,7 @@ div.seo-text ul li {
 }
 .wash_table__class_name:hover .class_descr {
     opacity: 1;
-    top: 110%;
+    top: 101%;
     transform: translateY(0);
     visibility: visible;
 }
