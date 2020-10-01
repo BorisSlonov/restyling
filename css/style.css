@@ -7386,10 +7386,13 @@ div.seo-text ul li {
 
   @media(max-width:425px) {
       .wash_services_h2 {
-          font-size: 1.5rem;
-      }
-  }
+        font-size: 1.5rem;
+    }
+}
 
+.w_product_name__h4 {
+    font-weight: 400;
+}
 
 
 
