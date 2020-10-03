@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	
+
 
 
 		$('.detail-phone-name').click(function () { 
@@ -793,10 +795,10 @@ $(document).ready(function () {
 	ymaps.ready(init);
 	function init() {
 		var myMap = new ymaps.Map("map__map", {
-			center: [60.06617, 30.30133],
+			center: [59.998528, 30.268370],
 			zoom: 17
 		});
-		var myPlacemark = new ymaps.Placemark([60.06617, 30.30233], {}, {
+		var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
 			iconLayout: 'default#image',
 			iconImageHref: 'img/map-logo.png',
 			iconImageSize: [72, 102],
@@ -1073,7 +1075,7 @@ $(document).ready(function () {
 	 
 
 
-
+	$ ('.js-lazyYT').lazyYT(); 
 
 
 
