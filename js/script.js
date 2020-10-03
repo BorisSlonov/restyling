@@ -1,5 +1,40 @@
 $(document).ready(function () {
 
+
+
+		$('.detail-phone-name').click(function () { 
+
+		$('.wash-phone-name').removeClass('phone-name-active')
+		$('.wash-phone').removeClass('h-phone-active')
+
+		$(this).toggleClass('phone-name-active')
+		$('.detail-phone').toggleClass('h-phone-active')
+			
+		
+			
+		
+		 });
+
+		$('.wash-phone-name').click(function () { 
+
+		$('.detail-phone-name').removeClass('phone-name-active')
+		$('.detail-phone').removeClass('h-phone-active')
+		
+
+		$(this).toggleClass('phone-name-active')
+		$('.wash-phone').toggleClass('h-phone-active')
+
+			
+			
+
+
+		});
+
+
+	
+
+   		
+
 	/*
 	 * Creates Cookie notice
 	 */
