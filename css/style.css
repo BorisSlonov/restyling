@@ -55,7 +55,6 @@ html {
     -webkit-font-smoothing: antialiased;
     width: 100%;
     height: 100%;
-    background-color: #fff;
     font-family: "Proxima Nova";
 }
 
@@ -7434,6 +7433,10 @@ div.seo-text ul li {
 @media(max-width:550px) {
     .wash_table__head {
         top: 90px;
+    }
+
+    .car-wash {
+        margin-top: 1.5rem;
     }
 }
 .class_descr {
