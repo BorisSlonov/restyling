@@ -1072,11 +1072,6 @@ $(document).ready(function () {
 		$('.wash_table__col1').removeClass('w-active')
 	 })
 
-	 
-
-
-	$ ('.js-lazyYT').lazyYT(); 
-
 
 
 
@@ -1084,7 +1079,9 @@ $(document).ready(function () {
 });
 
 
-
+$(document).ready(function () {
+		$ ('.js-lazyYT').lazyYT(); 
+});
 
 
 window.onload = function () {
