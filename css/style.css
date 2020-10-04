@@ -7570,11 +7570,7 @@ div.seo-text ul li {
     }
 }
 
-@media(max-width:500px) {
-    .wash_table__head {
-        top: 85px;
-    }
-}
+
 
 .class_popup_link {
     display: flex;
