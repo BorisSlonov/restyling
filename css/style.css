@@ -16,6 +16,16 @@ section {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+img {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  img[data-src] {
+    opacity: 0;
+  }
+
 @font-face {
     font-family: "Proxima Nova";
     font-display: swap;
@@ -7626,7 +7636,6 @@ div.seo-text ul li {
 .contacts-num {
     color: rgb(51, 51, 51)
 }
-
 
 
 
