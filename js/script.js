@@ -104,7 +104,7 @@ $(document).ready(function () {
 
 	// format phone pasted from clipboard
 	$("[name=phone]").each(function (i, obj) {
-		let myElement = obj
+		let myElement = obj;
 		//console.log(myElement);
 		myElement.onpaste = function (e) {
 			let pastedText = undefined;
@@ -144,19 +144,6 @@ $(document).ready(function () {
 	$("[name=phone]").attr('type', 'tel');
 
 
-	// var max_chars = 10;
-
-	// $('[name=phone]').keydown(function (e) {
-	// 	if ($(this).val().length >= max_chars) {
-	// 		$(this).val($(this).val().substr(0, max_chars));
-	// 	}
-	// });
-
-	// $('[name=phone]').keyup(function (e) {
-	// 	if ($(this).val().length >= max_chars) {
-	// 		$(this).val($(this).val().substr(0, max_chars));
-	// 	}
-	// });
 
 
 	$("[name=date]").datepicker({ minDate: 0 });
