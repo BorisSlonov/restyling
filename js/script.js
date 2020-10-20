@@ -567,6 +567,17 @@ $(document).ready(function () {
 
 
 
+	setTimeout(function () {
+
+		$('.services__nav-item').click(function () {
+
+			$('.services__slider-new').slick('reinit');
+			$('.services__slider-new-nav').slick('reinit');
+		})
+
+	}, 1000);
+
+
 	$('.detail-phone-name').click(function () {
 
 		$('.wash-phone-name').removeClass('phone-name-active')
