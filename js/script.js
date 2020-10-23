@@ -1,5 +1,39 @@
+"use stict"
+
+
+function lazyMap() {
+	let flag = 0;
+
+	window.addEventListener('scroll', function (scrollY, mapOffset) {
+		let scrollY = window.scrollY
+		let mapOffset = document.getElementById('map__map').offsetTop
+		if ((scrollY >= mapOffset - 500) && (flag = 0)) {
+
+			// MAP
+			ymaps.ready(init);
+			function init() {
+				var myMap = new ymaps.Map("map__map", {
+					center: [59.998528, 30.268370],
+					zoom: 17
+				});
+				var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/map-logo.png',
+					iconImageSize: [72, 102],
+					iconImageOffset: [-36, -102]
+				});
+				myMap.geoObjects.add(myPlacemark);
+			}
+		}
+		flag = 1;
+
+	});
+}
+lazyMap()
+
 
 // lazyYT
+
 ; (function ($) {
 	'use strict';
 
@@ -1369,22 +1403,8 @@ $(document).ready(function () {
 		$('.protect').addClass('current')
 	})
 
-	// MAP
-	ymaps.ready(init);
-	function init() {
-		var myMap = new ymaps.Map("map__map", {
-			center: [59.998528, 30.268370],
-			zoom: 17
-		});
-		var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
-			iconLayout: 'default#image',
-			iconImageHref: 'img/map-logo.png',
-			iconImageSize: [72, 102],
-			iconImageOffset: [-36, -102]
-		});
 
-		myMap.geoObjects.add(myPlacemark);
-	}
+
 
 
 
@@ -1720,7 +1740,6 @@ function openCity(evt, cityName) {
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-
 
 
 
