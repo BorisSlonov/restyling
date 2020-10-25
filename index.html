@@ -61,7 +61,7 @@
           </nav>
           <div class="header__phone-block">
             <span class="h-phone detail-phone-name">
-             
+
               <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 513.64 513.64"
@@ -2730,9 +2730,35 @@
   <script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/popup.js"></script>
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=f247c53e-f87a-4f1b-b6a6-371ea366a914&lang=ru_RU"
-    type="text/javascript"></script> -->
-  <script src="js/script.js"></script>
+
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=f247c53e-f87a-4f1b-b6a6-371ea366a914&lang=ru_RU"
+    type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("map__map", {
+        center: [59.998528, 30.268370],
+        zoom: 17
+      });
+      var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-logo.png',
+        iconImageSize: [72, 102],
+        iconImageOffset: [-36, -102]
+      });
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+
+  <!-- <script>
+    setTimeout(function () {
+      var elem = document.createElement('script');
+      elem.type = 'text/javascript';
+      elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=f247c53e-f87a-4f1b-b6a6-371ea366a914&lang=ru_RU';
+      document.getElementsByTagName('body')[0].appendChild(elem);
+    }, 2000);
+  </script> -->
 
 </body>
 
