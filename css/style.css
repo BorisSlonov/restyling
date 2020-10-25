@@ -7082,8 +7082,9 @@ div.seo-text ul li {
 .page-reviews-slider__item img {
     display: block;
     margin: 0 auto;
-    -o-object-fit: contain;
-    object-fit: contain;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
     max-height: 250px;
     -webkit-box-shadow: 0 0 4px 1px #ccc;
     box-shadow: 0 0 4px 1px #ccc
@@ -8718,3 +8719,4 @@ div.seo-text ul li {
 .contacts-num {
     color: #333
 }
+
