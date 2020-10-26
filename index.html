@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="lib/slick/slick.css">
   <link rel="stylesheet" href="lib/selectize/selectize.css">
   <link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
 
 
   <link rel="preconnect" href="//api-maps.yandex.ru">
@@ -34,6 +34,8 @@
       var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
     })(window, document, 'script', 'cloud.roistat.com', '6c8ae7c72e7624d60d17f44aaa534a5b');
   </script>
+
+
 
 </head>
 
@@ -1616,57 +1618,57 @@
             <!-- row -->
             <div class="page-reviews__row reviews-slider">
               <div class="page-reviews-slider__item">
-                <a data-fancybox="gallery" href="img/reviews/4.png">
+                <a data-fancybox="gallery" target="_blank" href="img/reviews/4.png">
                   <picture>
                     <source type="image/webp" srcset="img/reviews/4.webp">
 
-                    <img loading="lazy" class="complex__img" src="img/reviews/4.png" alt="">
+                    <img loading="lazy" class="complex__img reviews-photo" src="img/reviews/4.png" alt="">
                   </picture>
                 </a>
               </div>
 
               <div class="page-reviews-slider__item">
-                <a data-fancybox="gallery" href="img/reviews/1.png">
+                <a data-fancybox="gallery" target="_blank" href="img/reviews/1.png">
                   <picture>
                     <source type="image/webp" srcset="img/reviews/1.webp">
 
-                    <img loading="lazy" class="complex__img" src="img/reviews/1.png" alt="">
+                    <img loading="lazy" class="complex__img reviews-photo" src="img/reviews/1.png" alt="">
                   </picture>
                 </a>
               </div>
 
               <div class="page-reviews-slider__item">
-                <a data-fancybox="gallery" href="img/reviews/3.png">
+                <a data-fancybox="gallery" target="_blank" href="img/reviews/3.png">
                   <picture>
                     <source type="image/webp" srcset="img/reviews/3.webp">
 
-                    <img loading="lazy" class="complex__img" src="img/reviews/3.png" alt="">
+                    <img loading="lazy" class="complex__img reviews-photo" src="img/reviews/3.png" alt="">
                   </picture>
                 </a>
               </div>
 
               <div class="page-reviews-slider__item">
-                <a data-fancybox="gallery" href="img/reviews/2.png">
+                <a data-fancybox="gallery" target="_blank" href="img/reviews/2.png">
                   <picture>
                     <source type="image/webp" srcset="img/reviews/2.webp">
 
-                    <img loading="lazy" class="complex__img" src="img/reviews/2.png" alt="">
+                    <img loading="lazy" class="complex__img reviews-photo" src="img/reviews/2.png" alt="">
                   </picture>
                 </a>
               </div>
 
               <div class="page-reviews-slider__item">
-                <a data-fancybox="gallery" href="img/reviews/5.png">
+                <a data-fancybox="gallery" target="_blank" href="img/reviews/5.png">
                   <picture>
                     <source type="image/webp" srcset="img/reviews/5.webp">
 
-                    <img loading="lazy" class="complex__img" src="img/reviews/5.png" alt="">
+                    <img loading="lazy" class="complex__img reviews-photo" src="img/reviews/5.png" alt="">
                   </picture>
                 </a>
               </div>
 
               <div class="page-reviews-slider__item">
-                <a data-fancybox="gallery" href="img/reviews/6.png">
+                <a data-fancybox="gallery" target="_blank" href="img/reviews/6.png">
                   <picture>
                     <source type="image/webp" srcset="img/reviews/6.webp">
 
@@ -2132,7 +2134,7 @@
 
 
 
-      <div class="map screen">
+      <div id="map" class="map screen">
         <div class="container">
           <div class="map__title">Ждем вас по адресу</div>
           <div class="map__text">Богатырский проспект 14 корпус 2<br>Ежедневно: 10:00-21:00</div>
@@ -2724,22 +2726,69 @@
     </svg>
   </div>
 
+  <!-- <script src="lib/jquery/datepicker-ru.js"></script> -->
 
-  <script src="lib/jquery/jquery.js"></script>
-  <script src="lib/jquery/jquery-ui.min.js"></script>
-  <script src="lib/jquery/datepicker-ru.js"></script>
+  <!-- <script src="lib/jquery/jquery.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+  <!-- <script src="lib/jquery/jquery-ui.min.js"></script> -->
   <script src="lib/slick/slick.js"></script>
   <script src="lib/selectize/selectize.min.js"></script>
   <script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/popup.js"></script>
 
 
-  <script  src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
+  <!-- lazymap -->
+  <script>
+    setTimeout(function () {
+      var elem = document.createElement('script');
+      elem.type = 'text/javascript';
+      elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU';
+      document.getElementsByTagName('body')[0].appendChild(elem);
+    }, 5000);
+
+  </script>
+
+  <script>
+    let flag = 0
+
+    window.addEventListener('scroll', function () {
+      let scrollY = window.scrollY;
+      let mapOffset = document.querySelector('#map').offsetTop;
+
+      if ((scrollY >= mapOffset - 1000) && (flag == 0)) {
+        ymaps.ready(init);
+        function init() {
+          var myMap = new ymaps.Map("map__map", {
+            center: [59.998528, 30.268370],
+            zoom: 17
+          });
+          var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-logo.png',
+            iconImageSize: [72, 102],
+            iconImageOffset: [-36, -102]
+          });
+          myMap.geoObjects.add(myPlacemark);
+
+          flag = 1;
+
+        }
+      };
 
 
+    });
+  </script>
 
   <script src="js/script.js"></script>
+
+
+
+
 
 </body>
 
@@ -2747,14 +2796,7 @@
 
 
 
-  <!-- <script>
-    setTimeout(function () {
-      var elem = document.createElement('script');
-      elem.type = 'text/javascript';
-      elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU';
-      document.getElementsByTagName('body')[0].appendChild(elem);
-    }, 2000);
-  </script> -->
+
 
 
 <!-- 

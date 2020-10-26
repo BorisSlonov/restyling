@@ -764,8 +764,12 @@ html {
     opacity: .8
 }
 
-.complex__img {
-    max-width: 100%
+.complex__img  {
+    max-width: 100%;
+}
+
+.reviews-photo {
+    object-fit: contain !important;
 }
 
 .footer-form {
