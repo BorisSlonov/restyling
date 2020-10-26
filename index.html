@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
+
+  <link rel="preconnect" href="//api-maps.yandex.ru">
+  <link rel="dns-prefetch" href="//api-maps.yandex.ru">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="preload" href="/fonts/ProximaNova-Semibold.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="/fonts/ProximaNova-Bold.woff" as="font" type="font/woff" crossorigin>
@@ -2129,7 +2132,7 @@
 
 
 
-      <!-- <div class="map screen">
+      <div class="map screen">
         <div class="container">
           <div class="map__title">Ждем вас по адресу</div>
           <div class="map__text">Богатырский проспект 14 корпус 2<br>Ежедневно: 10:00-21:00</div>
@@ -2138,7 +2141,7 @@
             <div id="map__map" class="map__map"></div>
           </div>
         </div>
-      </div> -->
+      </div>
 
 
 
@@ -2732,34 +2735,28 @@
   <script src="js/popup.js"></script>
 
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=f247c53e-f87a-4f1b-b6a6-371ea366a914&lang=ru_RU"
-    type="text/javascript"></script>
-  <script>
-    ymaps.ready(init);
-    function init() {
-      var myMap = new ymaps.Map("map__map", {
-        center: [59.998528, 30.268370],
-        zoom: 17
-      });
-      var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/map-logo.png',
-        iconImageSize: [72, 102],
-        iconImageOffset: [-36, -102]
-      });
-      myMap.geoObjects.add(myPlacemark);
-    }
-  </script>
+  <script  src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
+
 
   <!-- <script>
     setTimeout(function () {
       var elem = document.createElement('script');
       elem.type = 'text/javascript';
-      elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=f247c53e-f87a-4f1b-b6a6-371ea366a914&lang=ru_RU';
+      elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU';
       document.getElementsByTagName('body')[0].appendChild(elem);
     }, 2000);
   </script> -->
 
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
+
+
+
+
+
+<!-- 
+  <script async src="//api-maps.yandex.ru/2.1/?apikey=f247c53e-f87a-4f1b-b6a6-371ea366a914&lang=ru_RU"
+    type="text/javascript"></script> -->
