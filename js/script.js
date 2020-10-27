@@ -1707,3 +1707,41 @@ function openCity(evt, cityName) {
 
 
 
+//lazy map
+
+setTimeout(function () {
+	var elem = document.createElement('script');
+	elem.type = 'text/javascript';
+	elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU';
+	document.getElementsByTagName('body')[0].appendChild(elem);
+}, 5000);
+
+
+let flag = 0
+
+window.addEventListener('scroll', function () {
+	let scrollY = window.scrollY;
+	let mapOffset = document.querySelector('#map__map').offsetTop;
+
+	if ((scrollY >= mapOffset - 1000) && (flag == 0)) {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map("map__map", {
+				center: [59.998528, 30.268370],
+				zoom: 17
+			});
+			var myPlacemark = new ymaps.Placemark([59.998528, 30.268370], {}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/map-logo.png',
+				iconImageSize: [72, 102],
+				iconImageOffset: [-36, -102]
+			});
+			myMap.geoObjects.add(myPlacemark);
+
+			flag = 1;
+
+		}
+	};
+
+
+});
