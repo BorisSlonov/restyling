@@ -1457,7 +1457,8 @@ html {
 }
 
 .main {
-    background: #fff url(../img/main-1.jpg) top center no-repeat;
+    position: relative;
+    background:  url(../img/main-1.jpg) top center no-repeat;
     background-position-x: calc(50% + 116px);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1475,6 +1476,8 @@ html {
     padding-bottom: 30px;
     margin-bottom: 23px
 }
+
+
 
 .main__cont {
     width: 100%;
@@ -6671,7 +6674,8 @@ html {
 
 @media only screen and (max-width:440px) {
     .main {
-        background-position-x: -390px
+        background-position-x: -480px;
+        background-position-y: -30px;
     }
 
     .main__title {
