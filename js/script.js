@@ -1139,10 +1139,13 @@ $(document).ready(function () {
 
 
 
-// function one_reload() {
-// 	if (!window.location.hash) {
-// 		window.location = window.location + '';
-// 		window.location.reload();
-// 	}
-// }
-// setTimeout("one_reload()", 1000);
+if( window.screen.width <= 600 ){
+	function one_reload() {
+		if (!window.location.hash) {
+			window.location = window.location + '';
+			window.location.reload();
+		}
+	}
+	setTimeout("one_reload()", 1000);
+}
+
