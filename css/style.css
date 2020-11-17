@@ -764,7 +764,7 @@ html {
     opacity: .8
 }
 
-.complex__img  {
+.complex__img {
     max-width: 100%;
 }
 
@@ -1458,7 +1458,7 @@ html {
 
 .main {
     position: relative;
-    background:  url(../img/main-1.jpg) top center no-repeat;
+    background: url(../img/main-1.jpg) top center no-repeat;
     background-position-x: calc(50% + 116px);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7116,7 +7116,7 @@ div.seo-text ul li {
 .reviews-social-links {
     text-align: center;
     font-size: 1.4rem;
-    margin: 2em 0 3em
+    margin: 2em 0 2.5em
 }
 
 .reviews-social-link:hover {
@@ -8728,3 +8728,87 @@ div.seo-text ul li {
     color: #333
 }
 
+/* services-block */
+.section-services-reviews {
+    margin-bottom: 3rem;
+}
+
+.services-reviews {}
+
+.services-reviews__title {
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.services-reviews__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.services-reviews__item {
+    flex-basis: calc(33.333% - 25px);
+    padding: 0.5em;
+}
+
+.services-reviews__item {
+    border-bottom: 2px solid rgba(204, 204, 204, 0.712);
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.services-reviews__item:hover {
+    box-shadow: 0 0 4px 1px #ccc;
+    transform: translateY(-1px);
+}
+
+.services_reviews_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.services_reviews_item__title {
+    border-bottom: 2px solid #ed1c24;
+    padding-bottom: 0.25rem;
+}
+
+.services_reviews_item__text {
+    margin-top: .25rem;
+}
+
+
+.services_result__title {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 28px;
+}
+
+@media(max-width:768px) {
+    .services-reviews__row {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .services-reviews__item {
+        max-width: 420px;
+    }
+
+    .services-reviews__item:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:425px) {
+    .services-reviews__title {
+        font-size: 1.4rem;
+    }
+
+    .services-reviews__title {
+        font-size: 1.4rem;
+    }
+}
+
+/* services-block */

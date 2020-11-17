@@ -1139,10 +1139,10 @@ $(document).ready(function () {
 
 
 
-function apnut_tolko_1_raz() {
-	if (!window.location.hash) {
-		window.location = window.location + '##';
-		window.location.reload();
-	}
-}
-setTimeout("apnut_tolko_1_raz()", 1000);
+// function one_reload() {
+// 	if (!window.location.hash) {
+// 		window.location = window.location + '';
+// 		window.location.reload();
+// 	}
+// }
+// setTimeout("one_reload()", 1000);
