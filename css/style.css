@@ -1696,7 +1696,7 @@ html {
     width: 552px;
     height: 336px;
     position: absolute;
-    background: url(../img/workshop-foto.png) no-repeat center center;
+    background: url(../img/171120/main/adress.jpg) no-repeat center center;
     background-size: cover;
     z-index: 2
 }
@@ -2864,7 +2864,8 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative;
+    background-image: url(../img/171120/main/our-princ.jpg);
 }
 
 .principles__row {
@@ -3196,11 +3197,12 @@ html {
     color: #fff;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    background-image: url(../img/171120/main/nice-services.jpg);
 }
 
 .service-for-you__content {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .75);
     padding: 40px 40px 40px 83px;
     width: 487px
 }
