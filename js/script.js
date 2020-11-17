@@ -177,14 +177,14 @@ $(document).ready(function () {
 	});
 
 
-	var mh = 0;
-	$(".item").each(function () {
-		var h_block = parseInt($(this).height());
-		if (h_block > mh) {
-			mh = h_block;
-		};
-	});
-	$(".item").height(mh);
+	// var mh = 0;
+	// $(".item").each(function () {
+	// 	var h_block = parseInt($(this).height());
+	// 	if (h_block > mh) {
+	// 		mh = h_block;
+	// 	};
+	// });
+	// $(".item").height(mh);
 
 
 	// COMMON START
@@ -337,8 +337,14 @@ $(document).ready(function () {
 
 
 		$(".services__nav-item, .service-navigation__nav-item").click(function () {
-			$('.services__slider-new-nav').slick('refresh');
-			$('.services__slider-new').slick('refresh');
+
+			
+			setTimeout(function () {
+				$('.services__slider-new-nav').slick('refresh');
+				$('.services__slider-new').slick('refresh');
+				$('.reviews-slider').slick('refresh'); 
+				$('.cases-slider').slick('refresh'); 
+			}, 300);
 
 
 			$(".services__nav-item.current").removeClass('current');
@@ -1139,7 +1145,7 @@ $(document).ready(function () {
 
 
 
-if( window.screen.width <= 600 ){
+if (window.screen.width <= 600) {
 	function one_reload() {
 		if (!window.location.hash) {
 			window.location = window.location + '';

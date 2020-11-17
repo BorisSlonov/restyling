@@ -3663,7 +3663,7 @@ html {
     height: 340px;
     position: relative;
     background: url(../img/service-video.jpg) no-repeat center center;
-    background-size: cover
+    background-size: cover;
 }
 
 .services__video-block:after {
@@ -7086,14 +7086,17 @@ div.seo-text ul li {
 .cases-slider .slick-list {
     overflow: hidden
 }
-
+.page-reviews-slider__item {
+    display: block;
+    height: 100%;
+}
 .page-reviews-slider__item img {
     display: block;
     margin: 0 auto;
     width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-height: 250px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    max-height: 320px;
     -webkit-box-shadow: 0 0 4px 1px #ccc;
     box-shadow: 0 0 4px 1px #ccc
 }
@@ -7116,7 +7119,7 @@ div.seo-text ul li {
 .reviews-social-links {
     text-align: center;
     font-size: 1.4rem;
-    margin: 2em 0 2.5em
+    margin: 2em;
 }
 
 .reviews-social-link:hover {
@@ -8809,6 +8812,10 @@ div.seo-text ul li {
     .services-reviews__title {
         font-size: 1.4rem;
     }
+}
+
+.mt-3rem {
+    margin-top: 3rem;
 }
 
 /* services-block */
