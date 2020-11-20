@@ -334,16 +334,25 @@ $(document).ready(function () {
 		});
 
 
+		$(".open-protect, #open-plenka").click(function () {
+			setTimeout(function () {
+				$('.services__slider-new-nav').slick('refresh');
+				$('.services__slider-new').slick('refresh');
+				$('.reviews-slider').slick('refresh');
+				$('.cases-slider').slick('refresh');
+			}, 300);
+		})
+
 
 
 		$(".services__nav-item, .service-navigation__nav-item").click(function () {
 
-			
+
 			setTimeout(function () {
 				$('.services__slider-new-nav').slick('refresh');
 				$('.services__slider-new').slick('refresh');
-				$('.reviews-slider').slick('refresh'); 
-				$('.cases-slider').slick('refresh'); 
+				$('.reviews-slider').slick('refresh');
+				$('.cases-slider').slick('refresh');
 			}, 300);
 
 
@@ -860,7 +869,9 @@ $(document).ready(function () {
 		$('.plenka').addClass('current')
 	})
 
-	$('#open-protect').click(function () {
+
+
+	$('.open-protect').click(function () {
 		//удаляем все .current у ссылока на табы
 		$(".service-navigation__nav-item.current").removeClass('current');
 		$(".services__nav-item.current").removeClass('current');
