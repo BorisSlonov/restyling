@@ -1156,13 +1156,27 @@ $(document).ready(function () {
 
 
 
-if (window.screen.width <= 600) {
-	function one_reload() {
-		if (!window.location.hash) {
-			window.location = window.location + '';
-			window.location.reload();
-		}
-	}
-	setTimeout("one_reload()", 1000);
-}
+// if (window.screen.width <= 600) {
 
+// }
+
+// function one_reload() {
+
+// 	if (!window.location.hash) {
+// 		window.location = window.location + '#';
+// 		window.location.reload();
+
+// 	} 
+
+
+// }
+
+// setTimeout("one_reload()", 500);
+
+
+if (localStorage.getItem("reload") === "false") {
+	localStorage.removeItem("reload");
+} else {
+	localStorage.setItem("reload", "false");
+	window.location = window.location;
+}

@@ -379,11 +379,21 @@ html {
 }
 
 .availability {
+    position: relative;
     padding-top: 70px;
     margin-top: 70px;
     padding-bottom: 87px;
-    background: url(../img/availability-bg.jpg) no-repeat center center;
+    background: url(../img/171120/studio.jpg) no-repeat center center;
     background-size: cover
+}
+.availability::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .availability .container {
