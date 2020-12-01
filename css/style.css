@@ -1478,10 +1478,10 @@ html {
     position: relative;
     width: 100%;
     background-image: url(../img/171120/main/main-bg.jpg);
-    background-attachment: fixed;
     background-size: cover;
     padding-bottom: 1rem;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.877);
 }
 
 .bg-shadow{
