@@ -12,17 +12,17 @@
 
     <title>Кейс | BMW 4</title>
     <script>
-        (function(w, d, s, h, id) {
+        (function (w, d, s, h, id) {
             w.roistatProjectId = id; w.roistatHost = h;
             var p = d.location.protocol == "https:" ? "https://" : "http://";
-            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
-            var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+            var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
         })(window, document, 'script', 'cloud.roistat.com', 'a76f45322a5ce6af57a922e9d991ebee');
-        </script>
+    </script>
 </head>
 
 <body>
-   
+
     <div class="wrap">
 
         <header class="header_common">
@@ -165,6 +165,14 @@
                             </picture>
                         </div>
                         <!-- item -->
+                        <!-- item -->
+                        <div class="page-cases-slider__item-nav">
+                            <picture class="picture">
+                                <source type="image/webp" srcset="/img/page-cases/plenka/bmw4/9.webp">
+                                <img loading="lazy" loading="lazy" src="/img/page-cases/plenka/bmw4/9.jpg" alt="">
+                            </picture>
+                        </div>
+                        <!-- item -->
                     </div>
                     <!-- row-nav -->
 
@@ -228,15 +236,17 @@
                             </picture>
                         </div>
                         <!-- item -->
-
+                        <!-- item -->
+                        <div class="page-cases-slider__item">
+                            <picture class="picture">
+                                <source type="image/webp" srcset="/img/page-cases/plenka/bmw4/9.webp">
+                                <img loading="lazy" loading="lazy" src="/img/page-cases/plenka/bmw4/9.jpg" alt="">
+                            </picture>
+                        </div>
+                        <!-- item -->
                     </div>
                     <!-- row -->
-
-
                     <!-- item -->
-
-
-
                 </div>
             </div>
 
@@ -281,15 +291,17 @@
                             <div class="footer__socials">
                                 <div class="footer__social">
                                     <a href="https://www.facebook.com/Restyling-Детейлинг-центр-1594336930692527/"
-                                        rel="nofollow" target="_blank"><img loading="lazy" loading="lazy" src="/img/fb-g.svg" alt="facebook"></a>
+                                        rel="nofollow" target="_blank"><img loading="lazy" loading="lazy"
+                                            src="/img/fb-g.svg" alt="facebook"></a>
                                 </div>
                                 <div class="footer__social">
                                     <a href="https://www.instagram.com/restyling.ru/" rel="nofollow"
-                                        target="_blank"><img loading="lazy" loading="lazy" src="/img/inst-g.svg" alt="instagram"></a>
+                                        target="_blank"><img loading="lazy" loading="lazy" src="/img/inst-g.svg"
+                                            alt="instagram"></a>
                                 </div>
                                 <div class="footer__social">
-                                    <a href="https://vk.com/detailingcentrspb" rel="nofollow" target="_blank"><img loading="lazy" loading="lazy"
-                                            src="/img/vk-g.svg" alt="vk"></a>
+                                    <a href="https://vk.com/detailingcentrspb" rel="nofollow" target="_blank"><img
+                                            loading="lazy" loading="lazy" src="/img/vk-g.svg" alt="vk"></a>
                                 </div>
                             </div>
                         </div>
@@ -308,314 +320,311 @@
 
     </div>
 
-        <div class="popup popup__services" data-popup="services" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__left">
-                            <div class="popup__title">Запишитесь на полировку сегодня</div>
-                            <div class="popup__desc">
-                                <span>и получите любой <br>
-                                    из подарков:</span>
-                                - "Антидождь" для лобового стекла<br>
-                                - мойка двигателя<br>
-                                - полировка фар<br>
+    <div class="popup popup__services" data-popup="services" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__left">
+                        <div class="popup__title">Запишитесь на полировку сегодня</div>
+                        <div class="popup__desc">
+                            <span>и получите любой <br>
+                                из подарков:</span>
+                            - "Антидождь" для лобового стекла<br>
+                            - мойка двигателя<br>
+                            - полировка фар<br>
+                        </div>
+                        <form action="/" method="POST" class="popup__form send_form">
+                            <div class="popup__input-text">Ваш номер телефона</div>
+                            <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
+                                required>
+                            <button class="popup__btn">ЗАПИСАТЬСЯ</button>
+                            <div class="footer-form__check">
+                                <label>
+                                    <input class="footer-form__checkbox" type="checkbox" name="accept" required checked>
+                                    <span class="footer-form__checkbox-custom"></span>
+                                    <span class="footer-form__label">я принимаю условия передачи информации</span>
+                                </label>
                             </div>
-                            <form action="/" method="POST" class="popup__form send_form">
-                                <div class="popup__input-text">Ваш номер телефона</div>
-                                <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
-                                    required>
-                                <button class="popup__btn">ЗАПИСАТЬСЯ</button>
-                                <div class="footer-form__check">
-                                    <label>
-                                        <input class="footer-form__checkbox" type="checkbox" name="accept" required
-                                            checked>
-                                        <span class="footer-form__checkbox-custom"></span>
-                                        <span class="footer-form__label">я принимаю условия передачи информации</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="popup__right">
-                            <img loading="lazy" loading="lazy" src="/img/popup-service.jpg" alt="">
-                        </div>
+                        </form>
+                    </div>
+                    <div class="popup__right">
+                        <img loading="lazy" loading="lazy" src="/img/popup-service.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="popup popup__services popup__callback" data-popup="callback" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__left">
-                            <div class="popup__title">Позвонить <br> вам?</div>
-                            <div class="popup__desc">
-                                Ответим на все вопросы <br>
-                                и расскажем о скидках и акциях
+    <div class="popup popup__services popup__callback" data-popup="callback" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__left">
+                        <div class="popup__title">Позвонить <br> вам?</div>
+                        <div class="popup__desc">
+                            Ответим на все вопросы <br>
+                            и расскажем о скидках и акциях
+                        </div>
+                        <form action="/" method="POST" class="popup__form send_form">
+                            <div class="popup__input-text">Ваш номер телефона</div>
+                            <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
+                                required>
+                            <button class="popup__btn">ПОЗВОНИТЬ МНЕ</button>
+                            <div class="footer-form__check">
+                                <label>
+                                    <input class="footer-form__checkbox" type="checkbox" name="accept" required checked>
+                                    <span class="footer-form__checkbox-custom"></span>
+                                    <span class="footer-form__label">я принимаю условия передачи информации</span>
+                                </label>
                             </div>
-                            <form action="/" method="POST" class="popup__form send_form">
-                                <div class="popup__input-text">Ваш номер телефона</div>
-                                <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
-                                    required>
-                                <button class="popup__btn">ПОЗВОНИТЬ МНЕ</button>
-                                <div class="footer-form__check">
-                                    <label>
-                                        <input class="footer-form__checkbox" type="checkbox" name="accept" required
-                                            checked>
-                                        <span class="footer-form__checkbox-custom"></span>
-                                        <span class="footer-form__label">я принимаю условия передачи информации</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="popup__right">
-                            <img loading="lazy" loading="lazy" src="/img/popup-service.jpg" alt="">
-                        </div>
+                        </form>
+                    </div>
+                    <div class="popup__right">
+                        <img loading="lazy" loading="lazy" src="/img/popup-service.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="popup popup__complex" data-popup="complex" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__left">
-                            <div class="popup__title">вы выбрали:</div>
-                            <div class="popup__desc">
-                                - Нанесение защитного керамического состава в 3 слоя<br>
-                                - Химчистка салона<br>
-                                - Чистка дисков без снятия<br>
-                                - Маскировка сколов на ЛКП в цвет кузова
+    <div class="popup popup__complex" data-popup="complex" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__left">
+                        <div class="popup__title">вы выбрали:</div>
+                        <div class="popup__desc">
+                            - Нанесение защитного керамического состава в 3 слоя<br>
+                            - Химчистка салона<br>
+                            - Чистка дисков без снятия<br>
+                            - Маскировка сколов на ЛКП в цвет кузова
+                        </div>
+                        <div class="popup__bonus-text">
+                            <span>Выберите свой бонус</span><br>
+                            и узнайте стоимость работ с учетом комплексной скидки
+                        </div>
+                        <div class="popup__bonus">
+                            <div class="popup__bonus-item">
+                                <div class="popup__bonus-img" style="background-image:url(img/bonus1.jpg);"></div>
+                                <div class="popup__bonus-title">Мойка двигателя</div>
                             </div>
-                            <div class="popup__bonus-text">
-                                <span>Выберите свой бонус</span><br>
-                                и узнайте стоимость работ с учетом комплексной скидки
+                            <div class="popup__bonus-item">
+                                <div class="popup__bonus-img" style="background-image:url(img/bonus1.jpg);"></div>
+                                <div class="popup__bonus-title">"Антидождь" на лобовое стекло</div>
                             </div>
-                            <div class="popup__bonus">
-                                <div class="popup__bonus-item">
-                                    <div class="popup__bonus-img" style="background-image:url(img/bonus1.jpg);"></div>
-                                    <div class="popup__bonus-title">Мойка двигателя</div>
-                                </div>
-                                <div class="popup__bonus-item">
-                                    <div class="popup__bonus-img" style="background-image:url(img/bonus1.jpg);"></div>
-                                    <div class="popup__bonus-title">"Антидождь" на лобовое стекло</div>
-                                </div>
-                                <div class="popup__bonus-item">
-                                    <div class="popup__bonus-img" style="background-image:url(img/bonus1.jpg);"></div>
-                                    <div class="popup__bonus-title">Полировка фар</div>
-                                </div>
+                            <div class="popup__bonus-item">
+                                <div class="popup__bonus-img" style="background-image:url(img/bonus1.jpg);"></div>
+                                <div class="popup__bonus-title">Полировка фар</div>
                             </div>
                         </div>
-                        <div class="popup__right">
-                            <form action="/" method="POST" class="popup__form send_form">
-                                <div class="popup__input-text">Ваш номер телефона</div>
-                                <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
-                                    required>
-                                <button class="popup__btn">УЗНАТЬ СТОИМОСТЬ</button>
-                            </form>
-                        </div>
+                    </div>
+                    <div class="popup__right">
+                        <form action="/" method="POST" class="popup__form send_form">
+                            <div class="popup__input-text">Ваш номер телефона</div>
+                            <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
+                                required>
+                            <button class="popup__btn">УЗНАТЬ СТОИМОСТЬ</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="popup popup__thanks" data-popup="thanks" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__title">Спасибо за доверие</div>
-                        <div class="popup__text">
-                            Пока ожидаете нашего звонка, изучите 10 советов, как <br>
-                            сохранить идеальное состояние авто после посещения <br>
-                            детейлинг-центра.
-                        </div>
-                        <div class="popup__img-line">
-                            <img loading="lazy" loading="lazy" src="/img/popup-thanks.png" alt="">
-                        </div>
-                        <div class="popup__link-download">
-                            <a href="assets/10advices.pdf" target="_blank">СКАЧАТЬ</a>
-                        </div>
+    <div class="popup popup__thanks" data-popup="thanks" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__title">Спасибо за доверие</div>
+                    <div class="popup__text">
+                        Пока ожидаете нашего звонка, изучите 10 советов, как <br>
+                        сохранить идеальное состояние авто после посещения <br>
+                        детейлинг-центра.
+                    </div>
+                    <div class="popup__img-line">
+                        <img loading="lazy" loading="lazy" src="/img/popup-thanks.png" alt="">
+                    </div>
+                    <div class="popup__link-download">
+                        <a href="assets/10advices.pdf" target="_blank">СКАЧАТЬ</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="popup popup__classification" data-popup="classification" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__title">Классификация</div>
-                        <div class="popup__text">
-                            <p>Класс I - Audi A3/A4/A5/А6, BMW 1/3/4/5/X3, Mercedes A/C/CLA/E/GLA/GLK и т.п.</p>
-                            <p>Класс II - Audi A7/A8/Q7, BMW 6/7/X5/X6, Mercedes S/CL/ML/GL, Porsche Cayenne/Macan, VW
-                                Touareg,
-                                Infinity FX и т.п.</p>
-                        </div>
+    <div class="popup popup__classification" data-popup="classification" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__title">Классификация</div>
+                    <div class="popup__text">
+                        <p>Класс I - Audi A3/A4/A5/А6, BMW 1/3/4/5/X3, Mercedes A/C/CLA/E/GLA/GLK и т.п.</p>
+                        <p>Класс II - Audi A7/A8/Q7, BMW 6/7/X5/X6, Mercedes S/CL/ML/GL, Porsche Cayenne/Macan, VW
+                            Touareg,
+                            Infinity FX и т.п.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <div class="popup popup__defence" data-popup="defence" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__text">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <td></td>
-                                        <td>S</td>
-                                        <td>M</td>
-                                        <td>L</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Капот</td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Передний бампер</td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Передняя часть крыльев</td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Фары</td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Зеркала</td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Стойки ветрового стекла</td>
-                                        <td></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Погрузочная зона багажника</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Полоса на крышу 30 см</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Внутренние пороги</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td>+ниши ручек в подар</td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                        <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+    <div class="popup popup__defence" data-popup="defence" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__text">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>S</td>
+                                    <td>M</td>
+                                    <td>L</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Капот</td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Передний бампер</td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Передняя часть крыльев</td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Фары</td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Зеркала</td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Стойки ветрового стекла</td>
+                                    <td></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Погрузочная зона багажника</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Полоса на крышу 30 см</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Внутренние пороги</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>+ниши ручек в подар</td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                    <td><img loading="lazy" loading="lazy" src="/img/cross.svg" alt=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cookie-notice">Мы используем куки для улучшения работы сайта. Закривая это уведомление Вы
-            соглашаетесь на наши файлы куки в соответствии с нашей политикой куки <button>Понятно</button></div>
+    </div>
+    <div class="cookie-notice">Мы используем куки для улучшения работы сайта. Закривая это уведомление Вы
+        соглашаетесь на наши файлы куки в соответствии с нашей политикой куки <button>Понятно</button></div>
 
 
 
 
 
 
-        <!-- quiz -->
-        <!-- quiz -->
+    <!-- quiz -->
+    <!-- quiz -->
 
 
 
 
 
 
-        <!-- zapis -->
+    <!-- zapis -->
 
-        <div class="popup popup__services" data-popup="zapis" style="display: none;">
-            <div class="popup__wrapblock">
-                <div class="popup__block">
-                    <div class="popup__close"></div>
-                    <div class="popup__cont">
-                        <div class="popup__left">
-                            <div class="popup__title">По какому номеру с Вами связаться?</div>
-                            <div class="popup__desc">
-                                <span style="font-size: 16px">рассчитаем стоимость услуги для вашего авто<br /> и
-                                    расскажем о предстоящих
-                                    акциях</span>
+    <div class="popup popup__services" data-popup="zapis" style="display: none;">
+        <div class="popup__wrapblock">
+            <div class="popup__block">
+                <div class="popup__close"></div>
+                <div class="popup__cont">
+                    <div class="popup__left">
+                        <div class="popup__title">По какому номеру с Вами связаться?</div>
+                        <div class="popup__desc">
+                            <span style="font-size: 16px">рассчитаем стоимость услуги для вашего авто<br /> и
+                                расскажем о предстоящих
+                                акциях</span>
+                        </div>
+                        <form action="/" method="POST" class="popup__form send_form">
+                            <div class="popup__input-text">Ваш номер телефона</div>
+                            <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
+                                required>
+                            <button class="popup__btn">ЗАПИСАТЬСЯ</button>
+                            <div class="footer-form__check">
+                                <label>
+                                    <input class="footer-form__checkbox" type="checkbox" name="accept" required checked>
+                                    <span class="footer-form__checkbox-custom"></span>
+                                    <span class="footer-form__label">я принимаю условия передачи информации</span>
+                                </label>
                             </div>
-                            <form action="/" method="POST" class="popup__form send_form">
-                                <div class="popup__input-text">Ваш номер телефона</div>
-                                <input class="popup__input" type="text" name="phone" placeholder="+7 (___) ___-__-__"
-                                    required>
-                                <button class="popup__btn">ЗАПИСАТЬСЯ</button>
-                                <div class="footer-form__check">
-                                    <label>
-                                        <input class="footer-form__checkbox" type="checkbox" name="accept" required
-                                            checked>
-                                        <span class="footer-form__checkbox-custom"></span>
-                                        <span class="footer-form__label">я принимаю условия передачи информации</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="popup__right">
-                            <img loading="lazy" loading="lazy" src="/img/popup-service.jpg" alt="">
-                        </div>
+                        </form>
+                    </div>
+                    <div class="popup__right">
+                        <img loading="lazy" loading="lazy" src="/img/popup-service.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- zapis -->
+    <!-- zapis -->
 
 
 
-        <script src="/lib/jquery/jquery.js"></script>
-        <script src="/lib/jquery/jquery.maskedinput.js"></script>
-        <script src="/lib/jquery/jquery-ui.min.js"></script>
-        <script src="/lib/jquery/datepicker-ru.js"></script>
-        <script src="/lib/slick/slick.js"></script>
-        <script src="/lib/selectize/selectize.min.js"></script>
-        <script src="/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="/js/popup.js"></script>
-        <script src="/js/script.js"></script>
-        <script data-img="19" src="https://cdn.rawgit.com/SerhiiKotliarov/knopkavverh/master/up_button.js"></script>
-        <script type="application/ld+json">
+    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/jquery/jquery.maskedinput.js"></script>
+    <script src="/lib/jquery/jquery-ui.min.js"></script>
+    <script src="/lib/jquery/datepicker-ru.js"></script>
+    <script src="/lib/slick/slick.js"></script>
+    <script src="/lib/selectize/selectize.min.js"></script>
+    <script src="/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/script.js"></script>
+    <script data-img="19" src="https://cdn.rawgit.com/SerhiiKotliarov/knopkavverh/master/up_button.js"></script>
+    <script type="application/ld+json">
     {
         "@context" : "http://schema.org",
         "@type" : "LocalBusiness",
@@ -632,7 +641,7 @@
         }
     }
 </script>
-        <script type="application/ld+json">
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",

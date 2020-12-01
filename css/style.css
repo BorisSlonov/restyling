@@ -7286,7 +7286,7 @@ div.seo-text ul li {
 }
 
 .case {
-    max-width: 920px;
+    max-width: 620px;
     margin: 0 auto
 }
 
@@ -7294,6 +7294,8 @@ div.seo-text ul li {
     max-width: 95%;
     margin: 0 auto
 }
+
+
 
 .case__list-div {
     display: -webkit-box;
@@ -7458,10 +7460,10 @@ div.seo-text ul li {
 
 .page-cases-slider__item {
     min-width: 0
+
 }
 
 .page-cases-slider__item img {
-    max-height: 420px;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
