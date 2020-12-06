@@ -1479,11 +1479,24 @@ html {
     width: 100%;
     background-image: url(../img/171120/main/main-bg.jpg);
     background-size: cover;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.877);
 }
 
+@media(max-width:600px) {
+    .main-bg {
+        background-repeat: no-repeat;
+        background-position-x: -200px;
+    }
+}
+@media(max-width:425px) {
+    .main-bg {
+        background-repeat: no-repeat;
+        background-position-x: -250px;
+    }
+}
 .bg-shadow{
     position: absolute;
     z-index: -1;
